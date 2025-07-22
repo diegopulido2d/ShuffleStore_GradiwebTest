@@ -1,0 +1,19 @@
+<section class="section featured-products show-less">
+  <div class="show-less-container" style="display: block;">
+    <div class="product-list">
+      {% for product in products limit: 4 %}
+        {% render 'product-card', product: product %}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="show-more-container" style="display: none;">
+    <div class="product-list">
+      {% for product in products %}
+        {% render 'product-card', product: product %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <button class="show-more-button">View All</button>
+  
+</section>

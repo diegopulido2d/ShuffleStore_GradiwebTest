@@ -1,0 +1,21 @@
+<a class="product-card" href="">
+  <div class="product-card-image">
+    <img src="{{ product.image | asset_url }}" height="auto" width="auto" alt="{{ product.title }}">
+    {% if product.tags %}
+    <ul class="product-card-tags">
+      {% for tag in product.tags %}
+        <li>{{ tag }}</li>
+      {% endfor %}  
+    </ul>
+    {% endif %}
+  </div>
+  <div class="product-card-content">
+    <div class="product-card-details">
+      <h2>{{ product.title }}</h2>
+      <p>${{ product.price }} USD</p>
+    </div>
+      <button class="product-card-button">
+        <img src="{{ "/assets/cart-icon.png" | asset_url }}" width="25" height="25" alt="Add to Cart">
+      </button>
+  </div>
+</a>

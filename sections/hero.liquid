@@ -1,0 +1,15 @@
+<section>
+   <div class="hero section">
+        <img src="{{settings['hero-banner'].settings.background_image | asset_url}}" alt="Hero Image" height="auto" width="auto" class="hero-image"/>
+        <a href="{{ settings['hero-banner'].settings.button_link }}" class="hero-button">
+            <button>{{ settings['hero-banner'].settings.button_text }}</button>
+        </a>
+   </div>
+  <div class="marquee marquee__hero">
+        <div class="marquee__content">
+            {% for i in (1..13) %}
+                 <span>{{settings['hero-banner'].settings.marquee_text | asset_url}}</span>
+            {% endfor %}
+        </div>
+    </div>
+</section>

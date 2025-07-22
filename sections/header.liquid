@@ -1,0 +1,28 @@
+<section class="header">
+    <div class="marquee">
+        <div class="marquee__content">
+            {% for i in (1..13) %}
+                 <span>{{ "FREE SHIPPING FOR ORDERS OVER $100" }}</span>
+            {% endfor %}
+        </div>
+    </div>
+    <nav class="section nav">
+        <img src="/assets/logo.svg" class="logo-desk" height="auto" width="auto" alt="logo"/>
+        <img src="/assets/logo-mobile.svg" class="logo-mobile" height="auto" width="auto" alt="logo"/>
+        <div class="payment-methods">
+            <p>We Accept</p>
+            <img src="/assets/payment_method_1.svg" height="25" width="25" alt="Method 1"/>
+            <img src="/assets/payment_method_2.svg" height="25" width="25" alt="Method 2"/>
+            <img src="/assets/payment_method_3.svg" height="25" width="25" alt="Method 3"/>
+            <img src="/assets/payment_method_4.svg" height="25" width="25" alt="Method 4"/>
+            <img src="/assets/payment_method_5.svg" height="25" width="25" alt="Method 5"/>
+        </div>
+        <div class="nav-links">
+            <a href="#products">All Products</a>
+            <a href="#about">Collections</a>
+            <button class="cart-button">
+                <img src="/assets/cart-icon.png" height="25" width="25" alt="Cart"/>
+            </button>
+         </div>
+    </nav>
+</section>
