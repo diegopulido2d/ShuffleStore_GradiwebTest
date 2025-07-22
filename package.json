@@ -1,7 +1,7 @@
 {
-  "name": "shopify-simulator",
+  "name": "shuffle-store-gradiwebtest",
   "version": "1.0.2",
-  "description": "Shopify simulator template",
+  "description": "Shuffle store homepage",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -14,7 +14,7 @@
     "javascript",
     "liquid"
   ],
-  "author": "miguelgradi",
+  "author": "diegopulido2d",
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.2",

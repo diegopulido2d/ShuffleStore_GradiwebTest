@@ -291,7 +291,6 @@ body {
 .footer-content .footer-logo a span::before {
   content: " | ";
   color: var(--purple-primary);
-  margin: 10px;
 }
 .footer-content .footer-logo .footer-p {
   font-size: small;
@@ -352,6 +351,10 @@ body {
   border: none !important;
   color: white;
   font-size: medium;
+}
+.footer-content .footer-socials .footer-newsletter form input:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
 }
 .footer-content .footer-socials .footer-newsletter form button {
   background-color: transparent;

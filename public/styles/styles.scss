@@ -322,7 +322,6 @@ body {
       span::before {
         content: " | ";
         color: var(--purple-primary);
-        margin: 10px;
       }
     }
 
@@ -390,6 +389,11 @@ body {
           border: none !important;
           color: white;
           font-size: medium;
+        }
+
+        input:focus-visible {
+          outline: none !important;
+          box-shadow: none !important;
         }
 
         button {
