@@ -9,6 +9,7 @@
         <div class="marquee__content">
             {% for i in (1..13) %}
                  <span>{{settings['hero-banner'].settings.marquee_text | asset_url}}</span>
+                 <img src="{{ "/assets/icon-separator.svg" | asset_url }}" height="auto" width="auto" alt="Separator" />
             {% endfor %}
         </div>
     </div>
