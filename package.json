@@ -4,8 +4,9 @@
   "description": "Shuffle store homepage",
   "main": "server.js",
   "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production",
     "start": "node server.js",
-    "build": "webpack",
     "sass:watch": "sass --watch public/styles/main.scss:public/styles/main.css",
     "sass:build": "sass public/styles/main.scss:public/styles/main.css --style compressed"
   },

@@ -51,6 +51,6 @@ npm install
 # Launch the project in port 3000
 npm start
 
-# Create a local build of the project
+# Create a theme.bundle.js file of the project, inside the assets directory
 npm run build
 ```

@@ -1,18 +1,27 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-  entry: './src/app.js',
+  mode: "production", // Remove the warning
+  entry: {
+    theme: "./assets/js/main.js", // Your main JS file
+    // Add other entry points if needed
+  },
   output: {
-    path: path.resolve(__dirname, 'public'),
-    filename: 'main.js',
+    filename: "[name].bundle.js",
+    path: path.resolve(__dirname, "assets"), // Output to assets folder
   },
   module: {
     rules: [
       {
-        test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
       },
     ],
   },
-  mode: 'development',
 };
