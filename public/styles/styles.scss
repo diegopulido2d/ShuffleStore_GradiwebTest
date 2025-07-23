@@ -283,6 +283,83 @@ body {
   }
 }
 
+.collections {
+  background: rgb(118 44 251);
+  background: radial-gradient(
+    circle at center 25%,
+    rgba(118, 44, 251, 1) 0%,
+    rgba(255, 255, 255, 0) 20%
+  );
+  .collections-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 80px;
+    letter-spacing: 2px;
+    font-family: "CountachBold", sans-serif;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .collections-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    .collections-item {
+      border-radius: 10px;
+      position: relative;
+      text-decoration: none;
+      color: white;
+      height: 350px;
+      width: 100%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transform-origin: center;
+        transition: 0.2s ease-in-out;
+        animation: fadeIn 0.8s ease forwards;
+      }
+
+      h5 {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        color: white;
+        font-size: 24px;
+        margin: 0;
+      }
+    }
+
+    .collections-item:hover {
+      border-color: var(--purple-active);
+      transition: 0.2s ease-in-out;
+
+      img {
+        transform: scale(1.05);
+        transition: 0.2s ease-in-out;
+      }
+    }
+  }
+
+  .collections-bottom-banner {
+    margin: 40px 0;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      animation: fadeIn 0.8s ease forwards;
+    }
+  }
+}
+
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -525,6 +602,48 @@ body {
       display: flex;
       flex-direction: column;
       gap: 20px;
+    }
+  }
+
+  .collections {
+    background: rgb(118 44 251);
+    background: radial-gradient(
+      circle at center 18%,
+      rgba(118, 44, 251, 1) 0%,
+      rgba(255, 255, 255, 0) 20%
+    );
+    .collections-title {
+      gap: 0;
+      font-size: 40px;
+      align-items: flex-start;
+
+      img {
+        margin-top: 10px;
+        width: 30x;
+        height: 30px;
+      }
+    }
+
+    .collections-list {
+      display: flex;
+      flex-direction: column;
+
+      .collections-item {
+        height: 400px;
+      }
+    }
+
+    .collections-bottom-banner {
+      border-radius: 8px;
+      height: 450px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
     }
   }
 }

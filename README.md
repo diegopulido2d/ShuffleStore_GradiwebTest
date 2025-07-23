@@ -29,6 +29,7 @@ Diego Pulido, 2025
 - **Header Component**
 - **Hero Component**
 - **Featured Products Component**
+- **Collections Component**
 - **Footer Component**
 
 ---
@@ -53,4 +54,7 @@ npm start
 
 # Create a theme.bundle.js file of the project, inside the assets directory
 npm run build
+
+# Watch Sass changes, open terminal into public/styles/ folder and run
+sass --watch styles.scss:styles.css
 ```

@@ -1,0 +1,23 @@
+<section id="collections" class="collections">
+  <div class="section">
+    <h2 class="collections-title">
+        <img src="{{"/assets/icon-separator.svg" | asset_url}}" height="auto" width="auto" alt="Separator" />
+        {{settings['collections'].settings.heading | asset_url}}
+        <img src="{{"/assets/icon-separator.svg" | asset_url}}" height="auto" width="auto" alt="Separator" />
+    </h2>
+    <div class="collections-list">
+        {% for collection in collections %}
+        {% assign collection_year = collection.created_at | date: "%Y" %}
+        {% if collection_year == "2025" %}
+            <a href="{{ collection.url }}" class="collections-item">
+                <img src="{{ collection.image | asset_url }}" height="auto" width="auto" alt="{{ collection.title }}">
+                <h5>{{ collection.title }}</h5>
+            </a>
+        {% endif %}
+        {% endfor %}
+    </div>
+    <div class="collections-bottom-banner">
+        <img src="{{settings['collections'].settings.bottom_banner_image | asset_url}}" height="auto" width="auto" alt="Bottom Banner" />
+    </div>
+   </div>
+</section>

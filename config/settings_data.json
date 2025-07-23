@@ -1,12 +1,5 @@
 {
   "sections": {
-    "featured-products": {
-      "type": "featured-products",
-      "settings": {
-        "heading": "Our Featured Products",
-        "background_color": "#ffffff"
-      }
-    },
     "hero-banner": {
       "type": "hero-banner",
       "settings": {
@@ -38,6 +31,13 @@
           { "label": "X(TWITTER)", "url": "https://twitter.com" },
           { "label": "INSTAGRAM", "url": "https://www.instagram.com" }
         ]
+      }
+    },
+    "collections": {
+      "type": "collections",
+      "settings": {
+        "heading": "LATEST COLLECTION",
+        "bottom_banner_image": "/assets/homepage_bottom_banner.avif"
       }
     }
   }
